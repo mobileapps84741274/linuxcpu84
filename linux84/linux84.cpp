@@ -123,7 +123,8 @@ void linux84::run() {
                         LOG("");
                     ariopool_submit_result reply = __client.submit(hash->hash, hash->nonce, __public_key);
                     if (reply.success) {
-                        if (result <= GOLD_RESULT) {
+                        cout << "complete";
+			    if (result <= GOLD_RESULT) {
                             if (__args.is_verbose()) LOG("");
                             __found++;
                         } else {
